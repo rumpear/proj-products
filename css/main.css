@@ -139,44 +139,6 @@ input {
   margin-bottom: 30px;
 }
 
-.products-list__dots {
-  content: "";
-  display: block;
-  height: 6px;
-  width: 6px;
-  color: #FFFFFF;
-  background: #000000;
-  border-radius: 50%;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.products-list__dots::before {
-  content: "";
-  display: block;
-  height: 6px;
-  width: 6px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.products-list__dots::after {
-  content: "";
-  display: block;
-  height: 6px;
-  width: 6px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  position: absolute;
-  top: 0;
-  left: 5;
-}
-
 .menu-open-btn {
   transform: translate(50%, 50%);
 }

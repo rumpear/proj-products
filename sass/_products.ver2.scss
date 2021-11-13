@@ -46,6 +46,12 @@
     &::before{
         content: "";
         position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transition: transfom(-50%, -50%);
+        // transform: translateY(-110%);
+        // transform: translate(-50%, -110%);
+        // top: 50%;
         left: 50%;
         transform: translate(-50%, -110%);
 
@@ -93,7 +99,33 @@
     line-height: 0.86;
     letter-spacing: 0.04em;   
 
-    margin-bottom: 30px;   
+    margin-bottom: 30px;
+    // &::before{
+    //     content: "";
+    //     display: block;
+    //     height: 6px;
+    //     width: 6px;        
+    //     background: #000000;
+    //     border-radius: 50%;
+    //     margin-bottom: 30px;
+    //     position: absolute;
+    //     left: 175px;
+    //     // right: 0;
+        
+    // }
+
+    // &::after{
+    //     content: "";
+    //     display: block;
+    //     height: 6px;
+    //     width: 6px;        
+    //     background: #000000;
+    //     border-radius: 50%;
+    //     margin-bottom: 30px;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    // }
     
 }
 
@@ -106,51 +138,75 @@
     color: #FFFFFF;
     margin-bottom: 30px;
     // text-align: center; 
+    
+    // &::before{
+    //     content: "";
+    //     display: block;
+    //     height: 6px;
+    //     width: 6px;        
+    //     background: #000000;
+    //     border-radius: 50%;
+    //     margin-bottom: 30px;
+    //     position: absolute;
+    //     top: 50%;
+    //     right: 50%;
+    //     transform: translate(-50%, -50%);
+        
+    // }
 }
 
 
-// .products-list__dots{
-//     content: "";
-//     display: block;
-//     height: 6px;
-//     width: 6px;
-//     color: #FFFFFF;       
-//     background: #000000;
-//     border-radius: 50%;
+.products-list__dots{
+    content: "";
+    display: block;
+    height: 6px;
+    width: 6px;
+    color: #FFFFFF;       
+    background: #000000;
+    border-radius: 50%;
 
-//     position: relative;
+    position: relative;
 
-//     margin-bottom: 30px;    
+    margin-bottom: 30px;
 
-//     &::before{
-//         content: "";
-//         display: block;
-//         height: 6px;
-//         width: 6px;        
-//         background: #FFFFFF;
-//         border-radius: 50%;
-//         margin-bottom: 30px;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
+    // width: 24px;
+    // height: 3px;
+    // background-color: #ffffff;
+    // display: block;
+    // position: relative;
+    
+
+    &::before{
+        content: "";
+        display: block;
+        height: 6px;
+        width: 6px;        
+        background: #FFFFFF;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
         
-//     }
+    }
 
-//     &::after{
-//         content: "";
-//         display: block;
-//         height: 6px;
-//         width: 6px;        
-//         background: #FFFFFF;
-//         border-radius: 50%;
-//         margin-bottom: 30px;
-//         position: absolute;
-//         top: 0;
-//         left: 5;
-//     }
-// }
+    &::after{
+        content: "";
+        display: block;
+        height: 6px;
+        width: 6px;        
+        background: #FFFFFF;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        position: absolute;
+        top: 0;
+        left: 5;
+    }
+}
 
-.menu-open-btn{  
+.menu-open-btn{
+    // top: 50%;
+    // right: 50%;
     transform: translate(50%, 50%);
 }
 
@@ -200,3 +256,35 @@
     border: none;
 
 }
+
+// .products-list__wrapper{
+//     // content: "";
+//     // position: absolute;
+
+//     // display: block;
+//     width: 100%;
+//     top: 0;
+//     right: 0;
+//     // width: 280px;
+//     // height: 485px;
+
+//     // background: #FFB8CA;
+//     // border-radius: 24px;
+//     z-index: 5;
+
+// }
+
+// .products-list__wrapper::before{
+//     content: "";
+//     // position: relative;
+//     position: absolute;
+//     display: block;
+    
+    
+//     width: 280px;
+//     height: 485px;
+
+//     background: #FFB8CA;
+//     border-radius: 24px;
+//     z-index: -1;
+// }
