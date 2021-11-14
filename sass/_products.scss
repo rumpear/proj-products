@@ -36,6 +36,7 @@
     @media screen and (min-width: $desktop){        
         font-size: 30px;  
         line-height: calc(34/30);
+        letter-spacing: 0.04em;
     }
 
 }
@@ -78,7 +79,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        margin: -30px;
+        margin: -15px;
     }
 
 }
@@ -107,15 +108,18 @@
 
         margin: 10px;
 
-        flex-basis: 100%/3;
+        flex-basis: calc(100% / 3 - 20px);
     }
 
     @media screen and (min-width: $desktop) {   
         padding: 44px;
         padding-top: 160px;
 
-        margin: 30px;
-        height: 525px;        
+        margin: 15px;
+        height: 525px;
+        
+        flex-basis: calc(100% / 3 - 30px);
+        // width: 330px;
     }
 
 
@@ -140,6 +144,13 @@
             height: 225px;
             transform: translate(-50%, -113%);
         }
+
+        @media screen and (min-width: $desktop) {   
+            width: 335px;        
+            height: 335px;
+            transform: translate(-50%, -110%);
+        }
+
     }
 
 }
@@ -214,7 +225,7 @@
 
     @media screen and (max-width: 767px) {
         margin-bottom: 0;
-        }
+    }
 
     &::before{
         @media screen and (max-width: 767px) {
@@ -247,8 +258,7 @@
 }
 
 .products-list__img{
-    // position: absolute;
-    // z-index: 5;
+    
 }
 
 .products-list__title{     
@@ -264,7 +274,14 @@
     line-height: 0.86;
     letter-spacing: 0.04em;   
 
-     margin-bottom: 66px;     
+    margin-bottom: 66px;     
+
+    @media screen and (min-width: $desktop){        
+        font-size: 30px;  
+        line-height: calc(34/30);        
+        margin-bottom: 70px;
+    }
+    
 
     &::after{
         content: '';
@@ -279,7 +296,12 @@
         height: 6px;
 
         border-bottom: 6px dotted #FFFFFF;
+
+        @media screen and (min-width: $desktop){        
+        margin-top: 32px;
+        }      
     }
+
 }
 
 .products-list__text{
@@ -301,10 +323,10 @@
     }
 
     @media screen and (min-width: $desktop){        
-        // font-size: 58px;  
-        // line-height: calc(66/58);
-        // letter-spacing: 0.06em;
-        // margin-bottom: 260px;
+        font-size: 16px;  
+        line-height: calc(28/16);   
+        height: 106px;     
+        margin-bottom: 60px;
     }
 
 
@@ -328,7 +350,8 @@
 .products-list__icon{
     fill: #D41443; 
     
-    .products-list__btn:hover &{
+    .products-list__btn:hover &,
+    .products-list__btn:focus &{
         fill: #C7133E;
     }
 }
